@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,12 @@
 		A754DB3626525B8400007C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3426525B8400007C94 /* Main.storyboard */; };
 		A754DB3826525B8500007C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3726525B8500007C94 /* Assets.xcassets */; };
 		A754DB3B26525B8500007C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3926525B8500007C94 /* LaunchScreen.storyboard */; };
+		A768C637265CEBB70012074F /* LayoutableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768C636265CEBB70012074F /* LayoutableButton.swift */; };
+		A77EA9EB265DDD1100E1D928 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A77EA9EA265DDD1100E1D928 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D1BA5D4258A67E75F3A70B3 /* Pods-OneBook.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.internal.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.internal.xcconfig"; sourceTree = "<group>"; };
 		8A31CB016695BA8C78F1AA17 /* Pods_OneBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9341A568208A2A799F49F78B /* Pods-OneBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.debug.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.debug.xcconfig"; sourceTree = "<group>"; };
 		A754DB2B26525B8400007C94 /* OneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +30,9 @@
 		A754DB3726525B8500007C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A754DB3A26525B8500007C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A754DB3C26525B8500007C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A768C636265CEBB70012074F /* LayoutableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutableButton.swift; sourceTree = "<group>"; };
+		A77EA9EA265DDD1100E1D928 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD58DFCBE1B394A4858DAD7D /* Pods-OneBook.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.appstore.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.appstore.xcconfig"; sourceTree = "<group>"; };
 		E1425A8F32B192155E14890B /* Pods-OneBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.release.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +53,8 @@
 			children = (
 				9341A568208A2A799F49F78B /* Pods-OneBook.debug.xcconfig */,
 				E1425A8F32B192155E14890B /* Pods-OneBook.release.xcconfig */,
+				2D1BA5D4258A67E75F3A70B3 /* Pods-OneBook.internal.xcconfig */,
+				CD58DFCBE1B394A4858DAD7D /* Pods-OneBook.appstore.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -81,15 +89,41 @@
 		A754DB2D26525B8400007C94 /* OneBook */ = {
 			isa = PBXGroup;
 			children = (
+				A754DB442652618B00007C94 /* Configurations */,
 				A754DB2E26525B8400007C94 /* AppDelegate.swift */,
 				A754DB3026525B8400007C94 /* SceneDelegate.swift */,
 				A754DB3226525B8400007C94 /* ViewController.swift */,
+				A768C636265CEBB70012074F /* LayoutableButton.swift */,
 				A754DB3426525B8400007C94 /* Main.storyboard */,
 				A754DB3726525B8500007C94 /* Assets.xcassets */,
 				A754DB3926525B8500007C94 /* LaunchScreen.storyboard */,
 				A754DB3C26525B8500007C94 /* Info.plist */,
 			);
 			path = OneBook;
+			sourceTree = "<group>";
+		};
+		A754DB442652618B00007C94 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				A77EA9E9265DDD0100E1D928 /* Firebase */,
+				A754DB45265261AB00007C94 /* Project */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		A754DB45265261AB00007C94 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		A77EA9E9265DDD0100E1D928 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				A77EA9EA265DDD1100E1D928 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +137,7 @@
 				A754DB2726525B8400007C94 /* Sources */,
 				A754DB2826525B8400007C94 /* Frameworks */,
 				A754DB2926525B8400007C94 /* Resources */,
+				766181E35BF76748462193F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A754DB3B26525B8500007C94 /* LaunchScreen.storyboard in Resources */,
+				A77EA9EB265DDD1100E1D928 /* GoogleService-Info.plist in Resources */,
 				A754DB3826525B8500007C94 /* Assets.xcassets in Resources */,
 				A754DB3626525B8400007C94 /* Main.storyboard in Resources */,
 			);
@@ -159,6 +195,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		766181E35BF76748462193F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneBook/Pods-OneBook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneBook/Pods-OneBook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneBook/Pods-OneBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E3547CCB5FDFF211829666C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +244,7 @@
 				A754DB3326525B8400007C94 /* ViewController.swift in Sources */,
 				A754DB2F26525B8400007C94 /* AppDelegate.swift in Sources */,
 				A754DB3126525B8400007C94 /* SceneDelegate.swift in Sources */,
+				A768C637265CEBB70012074F /* LayoutableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +331,7 @@
 			};
 			name = Debug;
 		};
-		A754DB3E26525B8500007C94 /* Release */ = {
+		A754DB3E26525B8500007C94 /* Internal */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,7 +384,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Internal;
 		};
 		A754DB4026525B8500007C94 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -352,9 +406,9 @@
 			};
 			name = Debug;
 		};
-		A754DB4126525B8500007C94 /* Release */ = {
+		A754DB4126525B8500007C94 /* Internal */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1425A8F32B192155E14890B /* Pods-OneBook.release.xcconfig */;
+			baseConfigurationReference = 2D1BA5D4258A67E75F3A70B3 /* Pods-OneBook.internal.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,7 +424,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Internal;
 		};
 		A754DB4226525BBC00007C94 /* AppStore */ = {
 			isa = XCBuildConfiguration;
@@ -429,7 +483,7 @@
 		};
 		A754DB4326525BBC00007C94 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1425A8F32B192155E14890B /* Pods-OneBook.release.xcconfig */;
+			baseConfigurationReference = CD58DFCBE1B394A4858DAD7D /* Pods-OneBook.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,21 +508,21 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A754DB3D26525B8500007C94 /* Debug */,
-				A754DB3E26525B8500007C94 /* Release */,
+				A754DB3E26525B8500007C94 /* Internal */,
 				A754DB4226525BBC00007C94 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Internal;
 		};
 		A754DB3F26525B8500007C94 /* Build configuration list for PBXNativeTarget "OneBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A754DB4026525B8500007C94 /* Debug */,
-				A754DB4126525B8500007C94 /* Release */,
+				A754DB4126525B8500007C94 /* Internal */,
 				A754DB4326525BBC00007C94 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Internal;
 		};
 /* End XCConfigurationList section */
 	};

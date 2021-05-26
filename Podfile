@@ -9,11 +9,13 @@ use_frameworks!
 # ignore all warnings from all dependencies
 inhibit_all_warnings!
 
+def thirdparty_pods
+  pod 'Firebase/Analytics'
+end
 
 
 target 'OneBook' do
-
-
-  # Pods for OneBook
+  
+  thirdparty_pods
 
 end
