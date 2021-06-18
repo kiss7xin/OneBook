@@ -56,7 +56,7 @@ extension UIButton{
     switch relativeLocation {
     case .imageUpTitleDown:
 
-        let image_top = (imageSize.height+titleSize.height+spacing)/2 - max(imageSize.height, titleSize.height)/2
+        let image_top = -((imageSize.height+titleSize.height+spacing)/2 - max(imageSize.height, titleSize.height)/2)
         let image_left = (imageSize.width+titleSize.width)/2 - max(imageSize.width, titleSize.width)/2
         
         adjustImageEdgeInsets.top = image_top
@@ -66,15 +66,13 @@ extension UIButton{
 
         adjustTitleEdgeInsets.top = verticalTitleAbsOffset
         adjustTitleEdgeInsets.bottom = -verticalTitleAbsOffset
-        adjustTitleEdgeInsets.left = -imageSize.width / 2 + horizontalResistent / 2
-        adjustTitleEdgeInsets.right = imageSize.width / 2 - horizontalResistent / 2
+        adjustTitleEdgeInsets.left = -imageSize.width / 2
+        adjustTitleEdgeInsets.right = 0
 
-        
-        
-        adjustContentEdgeInsets.top = 0
-        adjustContentEdgeInsets.bottom = 0
-        adjustContentEdgeInsets.left = 0
-        adjustContentEdgeInsets.right = 0
+        adjustContentEdgeInsets.top = ceil(min(imageSize.height,titleSize.height)/2)
+        adjustContentEdgeInsets.bottom = ceil(min(imageSize.height,titleSize.height)/2)
+        adjustContentEdgeInsets.left = -ceil(min(imageSize.width, titleSize.width)/2)
+        adjustContentEdgeInsets.right = -ceil(min(imageSize.width, titleSize.width)/2)
     case .imageDownTitleUp:
         adjustImageEdgeInsets.top = verticalImageAbsOffset
         adjustImageEdgeInsets.bottom = -verticalImageAbsOffset
@@ -115,5 +113,5 @@ extension UIButton{
     contentEdgeInsets = adjustContentEdgeInsets
 
     setNeedsLayout()
-}
+ }
 }

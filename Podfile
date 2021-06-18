@@ -10,7 +10,9 @@ use_frameworks!
 inhibit_all_warnings!
 
 def thirdparty_pods
-  pod 'Firebase/Analytics'
+  pod 'SwiftTheme'
+  pod 'Moya'
+  pod 'Kingfisher'
 end
 
 

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		709D61D78563AEE9161F196E /* Pods_OneBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A31CB016695BA8C78F1AA17 /* Pods_OneBook.framework */; };
+		A71B7331267B282C00B76E4E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B7330267B282C00B76E4E /* TableViewController.swift */; };
+		A71B7338267B28DE00B76E4E /* OBBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B7337267B28DE00B76E4E /* OBBaseTableViewCell.swift */; };
+		A71B733A267B332A00B76E4E /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B7339267B332A00B76E4E /* Singleton.swift */; };
+		A71B733C267B3F0000B76E4E /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B733B267B3F0000B76E4E /* BaseLabel.swift */; };
+		A7541697267C77D3007D39E2 /* OBTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7541696267C77D3007D39E2 /* OBTabbarController.swift */; };
+		A754169F267C9353007D39E2 /* BookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754169E267C9353007D39E2 /* BookshelfViewController.swift */; };
+		A75416A1267C9390007D39E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75416A0267C9390007D39E2 /* BaseViewController.swift */; };
 		A754DB2F26525B8400007C94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754DB2E26525B8400007C94 /* AppDelegate.swift */; };
 		A754DB3126525B8400007C94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754DB3026525B8400007C94 /* SceneDelegate.swift */; };
 		A754DB3326525B8400007C94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754DB3226525B8400007C94 /* ViewController.swift */; };
@@ -15,13 +22,37 @@
 		A754DB3826525B8500007C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3726525B8500007C94 /* Assets.xcassets */; };
 		A754DB3B26525B8500007C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3926525B8500007C94 /* LaunchScreen.storyboard */; };
 		A768C637265CEBB70012074F /* LayoutableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768C636265CEBB70012074F /* LayoutableButton.swift */; };
-		A77EA9EB265DDD1100E1D928 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A77EA9EA265DDD1100E1D928 /* GoogleService-Info.plist */; };
+		A7717CB0266F69210015CAD5 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7717CAF266F69200015CAD5 /* RevealServer.framework */; };
+		A7717CB1266F69210015CAD5 /* RevealServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7717CAF266F69200015CAD5 /* RevealServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7DDA0112667600400ED525B /* GlobalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DDA0102667600400ED525B /* GlobalPicker.swift */; };
+		A7DDA0132667624A00ED525B /* MyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DDA0122667624A00ED525B /* MyThemes.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7717CB2266F69210015CAD5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7717CB1266F69210015CAD5 /* RevealServer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D1BA5D4258A67E75F3A70B3 /* Pods-OneBook.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.internal.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.internal.xcconfig"; sourceTree = "<group>"; };
 		8A31CB016695BA8C78F1AA17 /* Pods_OneBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9341A568208A2A799F49F78B /* Pods-OneBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.debug.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.debug.xcconfig"; sourceTree = "<group>"; };
+		A71B7330267B282C00B76E4E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A71B7337267B28DE00B76E4E /* OBBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBBaseTableViewCell.swift; sourceTree = "<group>"; };
+		A71B7339267B332A00B76E4E /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		A71B733B267B3F0000B76E4E /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		A7541696267C77D3007D39E2 /* OBTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBTabbarController.swift; sourceTree = "<group>"; };
+		A754169E267C9353007D39E2 /* BookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfViewController.swift; sourceTree = "<group>"; };
+		A75416A0267C9390007D39E2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A754DB2B26525B8400007C94 /* OneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754DB2E26525B8400007C94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A754DB3026525B8400007C94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +62,9 @@
 		A754DB3A26525B8500007C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A754DB3C26525B8500007C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A768C636265CEBB70012074F /* LayoutableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutableButton.swift; sourceTree = "<group>"; };
-		A77EA9EA265DDD1100E1D928 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7717CAF266F69200015CAD5 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
+		A7DDA0102667600400ED525B /* GlobalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPicker.swift; sourceTree = "<group>"; };
+		A7DDA0122667624A00ED525B /* MyThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThemes.swift; sourceTree = "<group>"; };
 		CD58DFCBE1B394A4858DAD7D /* Pods-OneBook.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.appstore.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.appstore.xcconfig"; sourceTree = "<group>"; };
 		E1425A8F32B192155E14890B /* Pods-OneBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.release.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7717CB0266F69210015CAD5 /* RevealServer.framework in Frameworks */,
 				709D61D78563AEE9161F196E /* Pods_OneBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,9 +97,61 @@
 		148644D1137E94C436692B5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7717CAF266F69200015CAD5 /* RevealServer.framework */,
 				8A31CB016695BA8C78F1AA17 /* Pods_OneBook.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71B7332267B285D00B76E4E /* Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				A71B7334267B28A700B76E4E /* Views */,
+				A71B733D267B487400B76E4E /* Tabbar */,
+				A71B7333267B286D00B76E4E /* Base */,
+			);
+			path = Foundations;
+			sourceTree = "<group>";
+		};
+		A71B7333267B286D00B76E4E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A71B733B267B3F0000B76E4E /* BaseLabel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A71B7334267B28A700B76E4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A71B7337267B28DE00B76E4E /* OBBaseTableViewCell.swift */,
+				A75416A0267C9390007D39E2 /* BaseViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A71B733D267B487400B76E4E /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A7541696267C77D3007D39E2 /* OBTabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		A754169A267C8E9F007D39E2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A754169B267C9303007D39E2 /* Bookshelf */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A754169B267C9303007D39E2 /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				A754169E267C9353007D39E2 /* BookshelfViewController.swift */,
+			);
+			path = Bookshelf;
 			sourceTree = "<group>";
 		};
 		A754DB2226525B8400007C94 = {
@@ -89,11 +175,16 @@
 		A754DB2D26525B8400007C94 /* OneBook */ = {
 			isa = PBXGroup;
 			children = (
+				A754169A267C8E9F007D39E2 /* Features */,
+				A71B7332267B285D00B76E4E /* Foundations */,
+				A7DDA00F26675E5000ED525B /* Themes */,
 				A754DB442652618B00007C94 /* Configurations */,
 				A754DB2E26525B8400007C94 /* AppDelegate.swift */,
 				A754DB3026525B8400007C94 /* SceneDelegate.swift */,
 				A754DB3226525B8400007C94 /* ViewController.swift */,
+				A71B7330267B282C00B76E4E /* TableViewController.swift */,
 				A768C636265CEBB70012074F /* LayoutableButton.swift */,
+				A71B7339267B332A00B76E4E /* Singleton.swift */,
 				A754DB3426525B8400007C94 /* Main.storyboard */,
 				A754DB3726525B8500007C94 /* Assets.xcassets */,
 				A754DB3926525B8500007C94 /* LaunchScreen.storyboard */,
@@ -105,7 +196,6 @@
 		A754DB442652618B00007C94 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				A77EA9E9265DDD0100E1D928 /* Firebase */,
 				A754DB45265261AB00007C94 /* Project */,
 			);
 			path = Configurations;
@@ -118,12 +208,13 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
-		A77EA9E9265DDD0100E1D928 /* Firebase */ = {
+		A7DDA00F26675E5000ED525B /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				A77EA9EA265DDD1100E1D928 /* GoogleService-Info.plist */,
+				A7DDA0102667600400ED525B /* GlobalPicker.swift */,
+				A7DDA0122667624A00ED525B /* MyThemes.swift */,
 			);
-			path = Firebase;
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +229,8 @@
 				A754DB2826525B8400007C94 /* Frameworks */,
 				A754DB2926525B8400007C94 /* Resources */,
 				766181E35BF76748462193F3 /* [CP] Embed Pods Frameworks */,
+				A7717CB2266F69210015CAD5 /* Embed Frameworks */,
+				A7717CB3266F69350015CAD5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,7 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A754DB3B26525B8500007C94 /* LaunchScreen.storyboard in Resources */,
-				A77EA9EB265DDD1100E1D928 /* GoogleService-Info.plist in Resources */,
 				A754DB3826525B8500007C94 /* Assets.xcassets in Resources */,
 				A754DB3626525B8400007C94 /* Main.storyboard in Resources */,
 			);
@@ -211,6 +303,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneBook/Pods-OneBook-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A7717CB3266F69350015CAD5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = " APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
 		};
 		E3547CCB5FDFF211829666C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -241,10 +350,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75416A1267C9390007D39E2 /* BaseViewController.swift in Sources */,
+				A754169F267C9353007D39E2 /* BookshelfViewController.swift in Sources */,
 				A754DB3326525B8400007C94 /* ViewController.swift in Sources */,
+				A71B7331267B282C00B76E4E /* TableViewController.swift in Sources */,
+				A7DDA0112667600400ED525B /* GlobalPicker.swift in Sources */,
+				A71B7338267B28DE00B76E4E /* OBBaseTableViewCell.swift in Sources */,
+				A71B733A267B332A00B76E4E /* Singleton.swift in Sources */,
 				A754DB2F26525B8400007C94 /* AppDelegate.swift in Sources */,
 				A754DB3126525B8400007C94 /* SceneDelegate.swift in Sources */,
+				A7DDA0132667624A00ED525B /* MyThemes.swift in Sources */,
 				A768C637265CEBB70012074F /* LayoutableButton.swift in Sources */,
+				A7541697267C77D3007D39E2 /* OBTabbarController.swift in Sources */,
+				A71B733C267B3F0000B76E4E /* BaseLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,13 +439,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -376,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -394,15 +513,28 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97X5Y4QNHC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OneBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Objc",
+					"-framework",
+					RevealServer,
+					"-framework",
+					"\"SwiftTheme\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = nettop.OneBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
@@ -414,15 +546,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97X5Y4QNHC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OneBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Objc",
+					"-framework",
+					RevealServer,
+					"-framework",
+					"\"SwiftTheme\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = nettop.OneBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Internal;
 		};
@@ -471,7 +617,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -489,15 +635,28 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97X5Y4QNHC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OneBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Objc",
+					"-framework",
+					RevealServer,
+					"-framework",
+					"\"SwiftTheme\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = nettop.OneBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = AppStore;
 		};
