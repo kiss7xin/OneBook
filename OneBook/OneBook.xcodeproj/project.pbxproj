@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		709D61D78563AEE9161F196E /* Pods_OneBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A31CB016695BA8C78F1AA17 /* Pods_OneBook.framework */; };
 		A71B7331267B282C00B76E4E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B7330267B282C00B76E4E /* TableViewController.swift */; };
-		A71B7338267B28DE00B76E4E /* OBBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B7337267B28DE00B76E4E /* OBBaseTableViewCell.swift */; };
 		A71B733A267B332A00B76E4E /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B7339267B332A00B76E4E /* Singleton.swift */; };
 		A71B733C267B3F0000B76E4E /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B733B267B3F0000B76E4E /* BaseLabel.swift */; };
+		A72803EE26BA7C5200BA9A17 /* UserInfomationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72803ED26BA7C5200BA9A17 /* UserInfomationMenuView.swift */; };
 		A7541697267C77D3007D39E2 /* OBTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7541696267C77D3007D39E2 /* OBTabbarController.swift */; };
 		A754169F267C9353007D39E2 /* BookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754169E267C9353007D39E2 /* BookshelfViewController.swift */; };
 		A75416A1267C9390007D39E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75416A0267C9390007D39E2 /* BaseViewController.swift */; };
@@ -21,11 +21,20 @@
 		A754DB3626525B8400007C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3426525B8400007C94 /* Main.storyboard */; };
 		A754DB3826525B8500007C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3726525B8500007C94 /* Assets.xcassets */; };
 		A754DB3B26525B8500007C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754DB3926525B8500007C94 /* LaunchScreen.storyboard */; };
+		A760D36A26B7A22200E2F5AB /* UComicTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760D36926B7A22200E2F5AB /* UComicTCell.swift */; };
+		A762297F26EA0BD100E61B45 /* FindResponds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762297E26EA0BD100E61B45 /* FindResponds.swift */; };
 		A768C637265CEBB70012074F /* LayoutableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768C636265CEBB70012074F /* LayoutableButton.swift */; };
-		A7717CB0266F69210015CAD5 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7717CAF266F69200015CAD5 /* RevealServer.framework */; };
-		A7717CB1266F69210015CAD5 /* RevealServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7717CAF266F69200015CAD5 /* RevealServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7996E4827DAE44B00EACD90 /* GenericsDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7996E4727DAE44B00EACD90 /* GenericsDictionary.swift */; };
+		A7DAA2452681E573003A3D15 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DAA2442681E573003A3D15 /* MineViewController.swift */; };
+		A7DAA2482681E803003A3D15 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DAA2472681E803003A3D15 /* SourceViewController.swift */; };
+		A7DAA24D2681E86B003A3D15 /* SubscibeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DAA24C2681E86B003A3D15 /* SubscibeViewController.swift */; };
 		A7DDA0112667600400ED525B /* GlobalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DDA0102667600400ED525B /* GlobalPicker.swift */; };
 		A7DDA0132667624A00ED525B /* MyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DDA0122667624A00ED525B /* MyThemes.swift */; };
+		A7F01A6326D49284008CF286 /* UIViewRxEmptyDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F01A6226D49284008CF286 /* UIViewRxEmptyDataExtension.swift */; };
+		A7F01A6626D49679008CF286 /* UIStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F01A6526D49679008CF286 /* UIStateEnum.swift */; };
+		A7F01A6C26D4C8E4008CF286 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F01A6B26D4C8E4008CF286 /* R.generated.swift */; };
+		A7F01A9C26D76235008CF286 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F01A9B26D76235008CF286 /* SplashScreenView.swift */; };
+		A7F2C34C268D584200C1D3F7 /* THAccountInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2C34B268D584200C1D3F7 /* THAccountInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A7717CB1266F69210015CAD5 /* RevealServer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,9 +55,9 @@
 		8A31CB016695BA8C78F1AA17 /* Pods_OneBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9341A568208A2A799F49F78B /* Pods-OneBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.debug.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.debug.xcconfig"; sourceTree = "<group>"; };
 		A71B7330267B282C00B76E4E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		A71B7337267B28DE00B76E4E /* OBBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBBaseTableViewCell.swift; sourceTree = "<group>"; };
 		A71B7339267B332A00B76E4E /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		A71B733B267B3F0000B76E4E /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		A72803ED26BA7C5200BA9A17 /* UserInfomationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfomationMenuView.swift; sourceTree = "<group>"; };
 		A7541696267C77D3007D39E2 /* OBTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBTabbarController.swift; sourceTree = "<group>"; };
 		A754169E267C9353007D39E2 /* BookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfViewController.swift; sourceTree = "<group>"; };
 		A75416A0267C9390007D39E2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -61,10 +69,20 @@
 		A754DB3726525B8500007C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A754DB3A26525B8500007C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A754DB3C26525B8500007C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A760D36926B7A22200E2F5AB /* UComicTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicTCell.swift; sourceTree = "<group>"; };
+		A762297E26EA0BD100E61B45 /* FindResponds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResponds.swift; sourceTree = "<group>"; };
 		A768C636265CEBB70012074F /* LayoutableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutableButton.swift; sourceTree = "<group>"; };
-		A7717CAF266F69200015CAD5 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
+		A7996E4727DAE44B00EACD90 /* GenericsDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsDictionary.swift; sourceTree = "<group>"; };
+		A7DAA2442681E573003A3D15 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		A7DAA2472681E803003A3D15 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		A7DAA24C2681E86B003A3D15 /* SubscibeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscibeViewController.swift; sourceTree = "<group>"; };
 		A7DDA0102667600400ED525B /* GlobalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPicker.swift; sourceTree = "<group>"; };
 		A7DDA0122667624A00ED525B /* MyThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThemes.swift; sourceTree = "<group>"; };
+		A7F01A6226D49284008CF286 /* UIViewRxEmptyDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRxEmptyDataExtension.swift; sourceTree = "<group>"; };
+		A7F01A6526D49679008CF286 /* UIStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStateEnum.swift; sourceTree = "<group>"; };
+		A7F01A6B26D4C8E4008CF286 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A7F01A9B26D76235008CF286 /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		A7F2C34B268D584200C1D3F7 /* THAccountInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THAccountInfoModel.swift; sourceTree = "<group>"; };
 		CD58DFCBE1B394A4858DAD7D /* Pods-OneBook.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.appstore.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.appstore.xcconfig"; sourceTree = "<group>"; };
 		E1425A8F32B192155E14890B /* Pods-OneBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneBook.release.xcconfig"; path = "Target Support Files/Pods-OneBook/Pods-OneBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7717CB0266F69210015CAD5 /* RevealServer.framework in Frameworks */,
 				709D61D78563AEE9161F196E /* Pods_OneBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +114,6 @@
 		148644D1137E94C436692B5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7717CAF266F69200015CAD5 /* RevealServer.framework */,
 				8A31CB016695BA8C78F1AA17 /* Pods_OneBook.framework */,
 			);
 			name = Frameworks;
@@ -106,7 +122,6 @@
 		A71B7332267B285D00B76E4E /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
-				A71B7334267B28A700B76E4E /* Views */,
 				A71B733D267B487400B76E4E /* Tabbar */,
 				A71B7333267B286D00B76E4E /* Base */,
 			);
@@ -116,18 +131,10 @@
 		A71B7333267B286D00B76E4E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A75416A0267C9390007D39E2 /* BaseViewController.swift */,
 				A71B733B267B3F0000B76E4E /* BaseLabel.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		A71B7334267B28A700B76E4E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A71B7337267B28DE00B76E4E /* OBBaseTableViewCell.swift */,
-				A75416A0267C9390007D39E2 /* BaseViewController.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		A71B733D267B487400B76E4E /* Tabbar */ = {
@@ -142,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				A754169B267C9303007D39E2 /* Bookshelf */,
+				A7DAA24A2681E831003A3D15 /* Subscribe */,
+				A7DAA2462681E586003A3D15 /* Source */,
+				A7DAA2412681E1D8003A3D15 /* Mine */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -149,7 +159,7 @@
 		A754169B267C9303007D39E2 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
-				A754169E267C9353007D39E2 /* BookshelfViewController.swift */,
+				A7DAA2432681E561003A3D15 /* ViewController */,
 			);
 			path = Bookshelf;
 			sourceTree = "<group>";
@@ -175,6 +185,9 @@
 		A754DB2D26525B8400007C94 /* OneBook */ = {
 			isa = PBXGroup;
 			children = (
+				A7F01A9B26D76235008CF286 /* SplashScreenView.swift */,
+				A7F01A6B26D4C8E4008CF286 /* R.generated.swift */,
+				A7F01A6026D49236008CF286 /* Extension */,
 				A754169A267C8E9F007D39E2 /* Features */,
 				A71B7332267B285D00B76E4E /* Foundations */,
 				A7DDA00F26675E5000ED525B /* Themes */,
@@ -189,6 +202,7 @@
 				A754DB3726525B8500007C94 /* Assets.xcassets */,
 				A754DB3926525B8500007C94 /* LaunchScreen.storyboard */,
 				A754DB3C26525B8500007C94 /* Info.plist */,
+				A762297E26EA0BD100E61B45 /* FindResponds.swift */,
 			);
 			path = OneBook;
 			sourceTree = "<group>";
@@ -208,6 +222,66 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
+		A7DAA2412681E1D8003A3D15 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A7DAA2422681E555003A3D15 /* ViewController */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		A7DAA2422681E555003A3D15 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7DAA2442681E573003A3D15 /* MineViewController.swift */,
+				A72803ED26BA7C5200BA9A17 /* UserInfomationMenuView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A7DAA2432681E561003A3D15 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A754169E267C9353007D39E2 /* BookshelfViewController.swift */,
+				A7F2C34B268D584200C1D3F7 /* THAccountInfoModel.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A7DAA2462681E586003A3D15 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7DAA2492681E809003A3D15 /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A7DAA2492681E809003A3D15 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7DAA2472681E803003A3D15 /* SourceViewController.swift */,
+				A7996E4727DAE44B00EACD90 /* GenericsDictionary.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A7DAA24A2681E831003A3D15 /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				A7DAA24B2681E859003A3D15 /* ViewController */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		A7DAA24B2681E859003A3D15 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7DAA24C2681E86B003A3D15 /* SubscibeViewController.swift */,
+				A760D36926B7A22200E2F5AB /* UComicTCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		A7DDA00F26675E5000ED525B /* Themes */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +289,39 @@
 				A7DDA0122667624A00ED525B /* MyThemes.swift */,
 			);
 			path = Themes;
+			sourceTree = "<group>";
+		};
+		A7F01A6026D49236008CF286 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7F01A6726D496F9008CF286 /* String */,
+				A7F01A6426D49651008CF286 /* UIStateEnum */,
+				A7F01A6126D4926E008CF286 /* UIView */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A7F01A6126D4926E008CF286 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A7F01A6226D49284008CF286 /* UIViewRxEmptyDataExtension.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A7F01A6426D49651008CF286 /* UIStateEnum */ = {
+			isa = PBXGroup;
+			children = (
+				A7F01A6526D49679008CF286 /* UIStateEnum.swift */,
+			);
+			path = UIStateEnum;
+			sourceTree = "<group>";
+		};
+		A7F01A6726D496F9008CF286 /* String */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +332,7 @@
 			buildConfigurationList = A754DB3F26525B8500007C94 /* Build configuration list for PBXNativeTarget "OneBook" */;
 			buildPhases = (
 				E3547CCB5FDFF211829666C2 /* [CP] Check Pods Manifest.lock */,
+				A7F01A6A26D4C798008CF286 /* R.swift */,
 				A754DB2726525B8400007C94 /* Sources */,
 				A754DB2826525B8400007C94 /* Frameworks */,
 				A754DB2926525B8400007C94 /* Resources */,
@@ -321,6 +429,26 @@
 			shellPath = /bin/sh;
 			shellScript = " APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
 		};
+		A7F01A6A26D4C798008CF286 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		E3547CCB5FDFF211829666C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,15 +479,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A75416A1267C9390007D39E2 /* BaseViewController.swift in Sources */,
+				A7996E4827DAE44B00EACD90 /* GenericsDictionary.swift in Sources */,
+				A7DAA2452681E573003A3D15 /* MineViewController.swift in Sources */,
 				A754169F267C9353007D39E2 /* BookshelfViewController.swift in Sources */,
+				A7DAA2482681E803003A3D15 /* SourceViewController.swift in Sources */,
 				A754DB3326525B8400007C94 /* ViewController.swift in Sources */,
 				A71B7331267B282C00B76E4E /* TableViewController.swift in Sources */,
 				A7DDA0112667600400ED525B /* GlobalPicker.swift in Sources */,
-				A71B7338267B28DE00B76E4E /* OBBaseTableViewCell.swift in Sources */,
 				A71B733A267B332A00B76E4E /* Singleton.swift in Sources */,
+				A7F01A6C26D4C8E4008CF286 /* R.generated.swift in Sources */,
+				A7F01A6626D49679008CF286 /* UIStateEnum.swift in Sources */,
+				A760D36A26B7A22200E2F5AB /* UComicTCell.swift in Sources */,
 				A754DB2F26525B8400007C94 /* AppDelegate.swift in Sources */,
+				A7F2C34C268D584200C1D3F7 /* THAccountInfoModel.swift in Sources */,
+				A7F01A6326D49284008CF286 /* UIViewRxEmptyDataExtension.swift in Sources */,
+				A7DAA24D2681E86B003A3D15 /* SubscibeViewController.swift in Sources */,
+				A762297F26EA0BD100E61B45 /* FindResponds.swift in Sources */,
+				A7F01A9C26D76235008CF286 /* SplashScreenView.swift in Sources */,
 				A754DB3126525B8400007C94 /* SceneDelegate.swift in Sources */,
 				A7DDA0132667624A00ED525B /* MyThemes.swift in Sources */,
+				A72803EE26BA7C5200BA9A17 /* UserInfomationMenuView.swift in Sources */,
 				A768C637265CEBB70012074F /* LayoutableButton.swift in Sources */,
 				A7541697267C77D3007D39E2 /* OBTabbarController.swift in Sources */,
 				A71B733C267B3F0000B76E4E /* BaseLabel.swift in Sources */,
@@ -526,8 +665,6 @@
 					"$(inherited)",
 					"-Objc",
 					"-framework",
-					RevealServer,
-					"-framework",
 					"\"SwiftTheme\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nettop.OneBook;
@@ -558,8 +695,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-Objc",
-					"-framework",
-					RevealServer,
 					"-framework",
 					"\"SwiftTheme\"",
 				);
@@ -647,8 +782,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-Objc",
-					"-framework",
-					RevealServer,
 					"-framework",
 					"\"SwiftTheme\"",
 				);
