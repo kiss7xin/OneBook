@@ -88,10 +88,42 @@ class BookshelfViewController: BaseViewController {
         btn.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
         
         buttonCorner()
+        
+        
+        
+        let inputView = CodeInputView()
+        inputView.backgroundColor = .orange
+        self.view.addSubview(inputView)
+        inputView.snp.makeConstraints { make in
+            make.left.equalTo(16)
+            make.right.equalTo(-16)
+            make.top.equalTo(btn.snp.bottom).offset(20)
+            make.height.equalTo(80)
+        }
+        
+        let codebtn = UIButton.init(type: .system)
+        codebtn.setTitle("换主题", for: .normal)
+        codebtn.setImage(R.image.study_center_task_arrow(), for: .normal)
+        codebtn.theme_tintColor = GlobalPicker.accentColor
+//        btn.theme_setTitleColor(GlobalPicker.accentColor, forState: .normal)
+        self.view.addSubview(codebtn)
+        codebtn.snp.makeConstraints {
+            $0.left.equalTo(titleLabel.snp.left)
+            $0.top.equalTo(inputView.snp.bottom).offset(16)
+        }
+        codebtn.addTarget(self, action: #selector(codeClick), for: .touchUpInside)
+        
+        Task {
+            await testContinuation()
+        }
     }
     
     @objc func buttonClick() {
         MyThemes.switchToNext()
+    }
+    
+    @objc func codeClick() {
+        UIPasteboard.general.string = "MS2EWQY72YBKPDFV"
     }
     
     func test() {
@@ -130,7 +162,7 @@ class BookshelfViewController: BaseViewController {
             let dataFrom = try Data.init(contentsOf: url,options: .alwaysMapped)
             
             //恢复归档操作,恢复成内存中一个Swift对象
-            let savedUser = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dataFrom) as? THAccountInfoModel
+            let savedUser = try NSKeyedUnarchiver.unarchivedObject(ofClass: THAccountInfoModel.self, from: dataFrom)
             print(savedUser?.emailToken ?? "")
         }
         catch {
@@ -141,13 +173,16 @@ class BookshelfViewController: BaseViewController {
             let path = Bundle.main.path(forResource: "user1", ofType: "archive")
             let url = URL.init(fileURLWithPath: path!)
             let dataFrom = try Data.init(contentsOf: url,options: .alwaysMapped)
-            guard let user = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dataFrom) as? THAccountInfoModel else {
+            let savedUser = try NSKeyedUnarchiver.unarchivedObject(ofClass: THAccountInfoModel.self, from: dataFrom)
+            guard let user = savedUser else {
                 fatalError("THAccountInfoModel - can't get THAccountInfoModel")
             }
             print(user.emailToken!)
         } catch {
             print("THAccountInfoModel - can't encode data")
         }
+        
+        
     }
     
     func buttonCorner() {
@@ -191,5 +226,14 @@ class BookshelfViewController: BaseViewController {
         let progress = CGFloat(CGFloat(finishCount)/CGFloat(totalCount)) * 100.0
         let percent = String(format: "%.0f", progress)
         print("percent:\(percent)")
+    }
+    
+    func testContinuation() async {
+        let con = Continuation()
+        do { 
+            try await con.main()
+        } catch {
+            
+        }
     }
 }
